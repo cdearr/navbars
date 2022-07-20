@@ -1,0 +1,140 @@
+/* flexbox nav */
+:root {
+  /* color variables */
+  --clr-primary: #6aeeb5;
+  --clr-primary-hover: #29e6a7;
+  --clr-gray100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+
+/* border radius */
+  --radius: 0.2rem;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--clr-gray100);
+}
+
+ul {
+  list-style-type: none;
+}
+.nav-list {
+  background-color: white;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  transition: all 200ms ease-in;
+}
+
+.nav-item a:hover {
+  color: var(--clr-primary);
+  cursor: pointer;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.btn-primary {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  margin-right: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+/* flexbox nav end */
+
+/* flexbox nav 2 */
+.nav-links li {
+  display: inline-block;
+  padding: 0 1.3rem;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  transition: all 200ms ease 0s;
+}
+
+.nav-link:hover {
+  color: var(--clr-primary-hover);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 10%;
+}
+
+.logo {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.lebutton {
+  padding: 0.75rem 1.2rem;
+  background-color:var(--clr-primary);
+  border: none;
+  border-radius: 3rem;
+  color: black;
+  cursor: pointer;
+  transition: all 200ms ease 0s;
+}
+
+.lebutton:hover {
+  color: var(--clr-gray100);
+}
+
+.code-boi {
+  border-radius: 50%;
+}
+
+.btntaglink a button{
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 3rem;
+  color: black;
+  cursor: pointer;
+  padding: 0.75rem 1.2rem;
+}
+
+.btntaglink {
+  display: inline-block;
+}
+
+.btntaglink a button:hover {
+  color: var(--clr-gray100);
+  transition: all 200ms ease-in 0s;
+}
+
+.nav-head {
+  background-color: var(--clr-gray100);
+}
